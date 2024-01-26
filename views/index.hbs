@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="userlist">
+            <div class="header">
+                <h2>Joined Users</h2>
+            </div>
+            <div class="fixed">
+            </div>
+        </div>
+        <div class="chat">
+            <div class="header">
+                <h2>Chats</h2>
+            </div>
+            <br>
+            <div class="chatsmain">
+                {{!-- <div class="mainmessagediv">
+                    <div class="printmessage">
+                        <label for="">My Name</label>
+                    </div>
+                </div>
+                <div class="mainmessagediv">
+                    <div class="printmessage1">
+                        <label for="">My Name</label>
+                    </div>
+                </div>                --}}
+            </div>
+
+            <div class="sendmessage">
+                <input class="message" type="text" placeholder="Please type your message here...." id="writtenmessage">
+                {{!-- <div class="message">sdf</div> --}}
+                <div class="send" id="send">SEND</div>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
